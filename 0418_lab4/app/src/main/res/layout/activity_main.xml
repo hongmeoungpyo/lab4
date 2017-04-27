@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hong.a0418_lab4.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TableRow>
+        <TextView android:text="성명 "
+            android:padding="3dp"/>
+            <EditText android:id="@+id/nameText"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="성별 "
+                android:padding="3dp"/>
+            <RadioGroup
+                android:id="@+id/radioGroupSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남"        >
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여"        >
+            </RadioButton>
+</RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="수신여부" />
+            <CheckBox
+                android:id="@+id/sms"
+                android:text="sms"/>
+            <CheckBox
+                android:id="@+id/email"
+                android:text="e-mail"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button"
+                android:text="등록"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
